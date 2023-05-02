@@ -1,9 +1,25 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      Battery Level
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content padding>
+    <h3>Battery Status</h3>
+    <!--Paragraph that shows the battery level-->
+    <p> Device Battery Level: {{batteryLevel}}</p>
+
+
+
+    <!--Paragraph that shows if the charger is plugged in-->
+    <p> Charger is plugged in: {{plugged}}</p>
+
+
+    <!--Paragraph that shows the battery status-->
+
+    <p>Battery status:<strong> {{battery}}</strong></p>
+
+
+</ion-content>

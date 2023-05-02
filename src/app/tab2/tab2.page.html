@@ -1,9 +1,33 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      Sound and Flashlight
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content padding>
+    <h3> Play different sounds</h3>
+    <!--Button that plays a sound when clicked & another sound when clicked again-->
+   <ion-button shape="round" expand="full" color="{{song1 ? 'secondary': 'dark'}}" (click)="playMusic()">
+
+
+        Click me
+    </ion-button>
+  
+    <!--Button that plays a sound when swiped & another sound when swiped again
+    <input type="checkbox" (click)="play()">
+    -->
+
+    <br />
+    <h3> Flashlight turn on/off</h3>
+
+    <!--Button that toggles the flashlight on/off-->
+    <ion-button shape="round" expand="full" color="{{isOn ? 'secondary': 'light'}}" (click)="toggleFlash()">
+
+        Flashlight
+    </ion-button>
+
+
+
+</ion-content>
